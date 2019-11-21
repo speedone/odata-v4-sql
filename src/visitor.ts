@@ -315,7 +315,6 @@ export class Visitor{
 		var params = node.value.parameters || [];
 		switch (method){
 			case "contains":
-			case "substringof":
 				this.Visit(params[0], context);
 				if (this.options.useParameters){
 					let name = `p${this.parameterSeed++}`;
